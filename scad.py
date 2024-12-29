@@ -19,8 +19,8 @@ def make_scad(**kwargs):
         kwargs["save_type"] = "none"
         #kwargs["save_type"] = "all"
         
-        navigation = False
-        #navigation = True    
+        #navigation = False
+        navigation = True    
 
         kwargs["overwrite"] = True
         
@@ -43,18 +43,31 @@ def make_scad(**kwargs):
     if True:
 
         part_default = {} 
-        part_default["project_name"] = "test" ####### neeeds setting
+        part_default["project_name"] = "oomlout_oobb_part_plate_spacer_bolt_head_hole" ####### neeeds setting
         part_default["full_shift"] = [0, 0, 0]
         part_default["full_rotations"] = [0, 0, 0]
         
-        part = copy.deepcopy(part_default)
-        p3 = copy.deepcopy(kwargs)
-        p3["width"] = 3
-        p3["height"] = 3
-        #p3["thickness"] = 6
-        part["kwargs"] = p3
-        part["name"] = "base"
-        parts.append(part)
+
+
+        sizes = []
+        sizes.append([3, 3,""])
+        sizes.append([5, 5,""])
+        sizes.append([14, 20,"a4"])
+
+        for size in sizes:
+            wid = size[0]
+            hei = size[1]
+            ex = size[2]
+            part = copy.deepcopy(part_default)
+            p3 = copy.deepcopy(kwargs)
+            p3["width"] = wid
+            p3["height"] = hei
+            p3["thickness"] = 3
+            if ex != "":
+                p3["extra"] = ex
+            part["kwargs"] = p3
+            part["name"] = "base"
+            parts.append(part)
 
         
     #make the parts
@@ -73,11 +86,11 @@ def make_scad(**kwargs):
     #generate navigation
     if navigation:
         sort = []
-        #sort.append("extra")
-        sort.append("name")
+        sort.append("extra")
+        #sort.append("name")
         sort.append("width")
         sort.append("height")
-        sort.append("thickness")
+        #sort.append("thickness")
         
         generate_navigation(sort = sort)
 
@@ -95,9 +108,11 @@ def get_base(thing, **kwargs):
 
     #add plate
     p3 = copy.deepcopy(kwargs)
-    p3["type"] = "p"
+    p3["type"] = "p"    
     p3["shape"] = f"oobb_plate"    
     p3["depth"] = depth
+    p3["width"] = width - (14/15)
+    p3["height"] = height - (14/15)
     #p3["holes"] = True         uncomment to include default holes
     #p3["m"] = "#"
     pos1 = copy.deepcopy(pos)         
@@ -108,9 +123,10 @@ def get_base(thing, **kwargs):
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "p"
     p3["shape"] = f"oobb_holes"
-    p3["both_holes"] = True  
+    p3["both_holes"] = False  
     p3["depth"] = depth
-    p3["holes"] = "perimeter"
+    p3["radius_name"] = "m11" #set to 12 mm
+    p3["holes"] = "all"
     #p3["m"] = "#"
     pos1 = copy.deepcopy(pos)         
     p3["pos"] = pos1

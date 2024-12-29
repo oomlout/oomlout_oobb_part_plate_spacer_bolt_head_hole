@@ -1,0 +1,303 @@
+full_rotations:
+- 0
+- 0
+- 0
+full_shift:
+- 0
+- 0
+- 0
+id: oobb_part_oomlout_oobb_part_plate_spacer_bolt_head_hole_base_3_width_3_height_3_mm_depth
+kwargs:
+  height: 3
+  modes:
+  - 3dpr
+  overwrite: true
+  thickness: 3
+  type: oomlout_oobb_part_plate_spacer_bolt_head_hole_base
+  width: 3
+name: base
+project_name: C:\gh\oomlout_oobb_part_plate_spacer_bolt_head_hole
+thing:
+  classification: oobb
+  color: ''
+  components:
+  - - depth: 3
+      height: 2.0666666666666664
+      pos:
+      - 0
+      - 0
+      - 0
+      shape: rounded_rectangle
+      size:
+      - 29.999999999999996
+      - 29.999999999999996
+      - 3
+      type: positive
+      width: 2.0666666666666664
+  - - - - inclusion: laser
+          pos:
+          - -15.0
+          - -15.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: laser
+          pos:
+          - -15.0
+          - 0.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: laser
+          pos:
+          - -15.0
+          - 15.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: laser
+          pos:
+          - 0.0
+          - -15.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: laser
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: laser
+          pos:
+          - 0.0
+          - 15.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: laser
+          pos:
+          - 15.0
+          - -15.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: laser
+          pos:
+          - 15.0
+          - 0.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: laser
+          pos:
+          - 15.0
+          - 15.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: 3dpr
+          pos:
+          - -15.0
+          - -15.0
+          - 0
+          r: 6.0
+          shape: hole
+          type: negative
+    - - - inclusion: 3dpr
+          pos:
+          - -15.0
+          - 0.0
+          - 0
+          r: 6.0
+          shape: hole
+          type: negative
+    - - - inclusion: 3dpr
+          pos:
+          - -15.0
+          - 15.0
+          - 0
+          r: 6.0
+          shape: hole
+          type: negative
+    - - - inclusion: 3dpr
+          pos:
+          - 0.0
+          - -15.0
+          - 0
+          r: 6.0
+          shape: hole
+          type: negative
+    - - - inclusion: 3dpr
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 6.0
+          shape: hole
+          type: negative
+    - - - inclusion: 3dpr
+          pos:
+          - 0.0
+          - 15.0
+          - 0
+          r: 6.0
+          shape: hole
+          type: negative
+    - - - inclusion: 3dpr
+          pos:
+          - 15.0
+          - -15.0
+          - 0
+          r: 6.0
+          shape: hole
+          type: negative
+    - - - inclusion: 3dpr
+          pos:
+          - 15.0
+          - 0.0
+          - 0
+          r: 6.0
+          shape: hole
+          type: negative
+    - - - inclusion: 3dpr
+          pos:
+          - 15.0
+          - 15.0
+          - 0
+          r: 6.0
+          shape: hole
+          type: negative
+    - - - inclusion: 'true'
+          pos:
+          - -15.0
+          - -15.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: 'true'
+          pos:
+          - -15.0
+          - 0.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: 'true'
+          pos:
+          - -15.0
+          - 15.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: 'true'
+          pos:
+          - 0.0
+          - -15.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: 'true'
+          pos:
+          - 0.0
+          - 0.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: 'true'
+          pos:
+          - 0.0
+          - 15.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: 'true'
+          pos:
+          - 15.0
+          - -15.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: 'true'
+          pos:
+          - 15.0
+          - 0.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+    - - - inclusion: 'true'
+          pos:
+          - 15.0
+          - 15.0
+          - 0
+          r: 5.5
+          shape: hole
+          type: negative
+  components_objects:
+  - depth: 3
+    height: 2.0666666666666664
+    modes:
+    - 3dpr
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    save_type: all
+    shape: oobb_plate
+    thickness: 3
+    type: p
+    width: 2.0666666666666664
+  - both_holes: false
+    depth: 3
+    height: 3
+    holes: all
+    modes:
+    - 3dpr
+    overwrite: true
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_name: m11
+    save_type: all
+    shape: oobb_holes
+    thickness: 3
+    type: p
+    width: 3
+  components_string:
+  - oobb_plate_shape_p_type_3_depth_all_save_type_true_overwrite_'3dpr'_modes_2.0666666666666664_width_2.0666666666666664_height_3_thickness
+  - oobb_holes_shape_p_type_m11_radius_name_3_depth_all_save_type_true_overwrite_'3dpr'_modes_3_width_3_height_3_thickness_false_both_holes_all_holes
+  description: oomlout oobb part plate spacer bolt head hole base 3x3x3
+  description_extra: ''
+  description_main: 3_width_3_height_3_mm_depth
+  folder: C:\gh\oomlout_oobb_version_4_generated_parts\things\oobb_part_oomlout_oobb_part_plate_spacer_bolt_head_hole_base_3_width_3_height_3_mm_depth
+  height: 3
+  height_mm: 44
+  id: oobb_part_oomlout_oobb_part_plate_spacer_bolt_head_hole_base_3_width_3_height_3_mm_depth
+  manufacturer: ''
+  part_number: ''
+  short_name: ''
+  size: oomlout_oobb_part_plate_spacer_bolt_head_hole_base
+  thickness: 3
+  thickness_mm: 3
+  type: part
+  width: 3
+  width_mm: 44
