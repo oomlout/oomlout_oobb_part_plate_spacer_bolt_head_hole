@@ -1,0 +1,6 @@
+project_id: oomlout_oobb_part_plate_spacer_bolt_head_hole
+project_name: Oomlout Oobb Part Plate Spacer Bolt Head Hole
+project_repo: https://github.com/oomlout/oomlout_oobb_part_plate_spacer_bolt_head_hole
+production_format:
+  oolc_1:
+    file_location: source_files/oolc_1.cdr
