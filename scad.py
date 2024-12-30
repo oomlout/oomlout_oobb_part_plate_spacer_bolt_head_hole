@@ -17,15 +17,15 @@ def make_scad(**kwargs):
         #filter = "test"
 
         kwargs["save_type"] = "none"
-        #kwargs["save_type"] = "all"
+        kwargs["save_type"] = "all"
         
         #navigation = False
         navigation = True    
 
         kwargs["overwrite"] = True
         
-        #kwargs["modes"] = ["3dpr", "laser", "true"]
-        kwargs["modes"] = ["3dpr"]
+        kwargs["modes"] = ["3dpr", "laser", "true"]
+        #kwargs["modes"] = ["3dpr"]
         #kwargs["modes"] = ["laser"]
 
     # default variables
@@ -52,7 +52,8 @@ def make_scad(**kwargs):
         sizes = []
         sizes.append([3, 3,""])
         sizes.append([5, 5,""])
-        sizes.append([14, 20,"a4"])
+        sizes.append([14, 20,"paper_sheet_a4"])
+        sizes.append([25, 22,"furniture_shelf_ikea_kallax"])
 
         for size in sizes:
             wid = size[0]
